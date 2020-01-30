@@ -48,7 +48,7 @@ backend
 frontend
     assets/              contains application assets such as JavaScript and CSS
     config/              contains frontend configurations
-    controllers/         contains Web controller classes
+    controllers/         contains Web controller classes - Rest Serving Controllers exist here
     models/              contains frontend-specific model classes
     runtime/             contains files generated during runtime
     tests/               contains tests for frontend application
