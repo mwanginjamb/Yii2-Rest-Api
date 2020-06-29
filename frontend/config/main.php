@@ -47,14 +47,25 @@ return [
             'rules' => [
                 [
                     'class' => \yii\rest\UrlRule::class ,
-                    'controller' => ['post','comment'],
+                    'controller' => ['post','comment','account'],
 
                 ],
                 [
                      'pattern' => 'posts/<postId:\d+>/comments',
                      'route' => 'comment/index'
-                ]
+                ],
+
             ],
+        ],
+
+        'assetManager' => [
+            'appendTimestamp' => true,
+            'bundles' => [
+                'yii\web\JqueryAsset' => [
+                    'sourcePath' => null,
+                    'js' => ['/plugins/jquery/jquery.min.js'],
+                ]
+            ]
         ],
 
     ],
